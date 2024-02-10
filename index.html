@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="login">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button id="loginButton" class="button">Login</button>
+        </div>
+        <div id="main-content" style="display: none;">
+            <div id="welcome" class="welcome-message"></div>
+            <div id="tabs" class="tabs">
+                <button id="upcomingTab" class="tab-button" onclick="showTab('upcoming')">View upcoming events</button>
+                <button id="interestedTab" class="tab-button" onclick="showTab('interested')">Interested events</button>
+                <button id="leaderboardTab" class="tab-button" onclick="showTab('leaderboard')">Leaderboard</button>
+                <button id="calendarTab" class="tab-button" onclick="showTab('calendar')">Calendar of Events</button>
+            </div>
+            <div id="content" class="content"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
